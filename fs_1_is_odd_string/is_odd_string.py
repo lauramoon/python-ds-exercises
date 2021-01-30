@@ -29,3 +29,4 @@ def is_odd_string(word):
     """
 
     # Hint: you may find the ord() function useful here
+    return sum([1 for char in word if ord(char) % 2 == 1]) % 2 == 1

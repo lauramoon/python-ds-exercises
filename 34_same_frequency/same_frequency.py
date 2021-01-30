@@ -10,3 +10,6 @@ def same_frequency(num1, num2):
         >>> same_frequency(1212, 2211)
         True
     """
+    map1 = { char:  str(num1).count(char) for char in str(num1)}
+    map2 = { char:  str(num2).count(char) for char in str(num2)}
+    return map1 == map2

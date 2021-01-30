@@ -26,3 +26,9 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3)
         
     """
+    ops = {'add': a + b, 'subtract': a - b, 'multiply': a * b, 'divide': a/b}
+    if operation in ops:
+        res = ops[operation]
+        if make_int:
+            res = int(res)
+        return f"{message} {res}"

@@ -11,3 +11,9 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    max = 0
+    for item in set(nums) :
+        if nums.count(item) > max:
+            result = item
+            max = nums.count(item)
+    return result
