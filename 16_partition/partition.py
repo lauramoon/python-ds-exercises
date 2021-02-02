@@ -19,4 +19,6 @@ def partition(lst, fn):
         >>> partition(["hi", None, 6, "bye"], is_string)
         [['hi', 'bye'], [None, 6]]
     """
+    # interesting that this more compact version is less optimal
+    
     return [[item for item in lst if fn(item)], [item for item in lst if not fn(item)]]

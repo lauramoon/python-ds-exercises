@@ -19,6 +19,7 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
+    # more efficient single-traversal in given solution
     lst = list(s)
     v_lst = [char for char in lst if char.lower() in 'aeiou']
     v_lst.reverse()

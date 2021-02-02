@@ -13,6 +13,7 @@ def three_odd_numbers(nums):
         >>> three_odd_numbers([1, 2, 3, 3, 2])
         False
     """
+    # mistake here not caught by tests: range should be len(nums) - 2
     for i in range(len(nums) - 3):
         if (nums[i] + nums[i+1] + nums[i+2]) % 2 == 1:
             return True

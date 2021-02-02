@@ -13,6 +13,8 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
+    # solution is more efficient with nice use of set
+    
     for num in nums:
         if nums.count(num) > 1:
             return num

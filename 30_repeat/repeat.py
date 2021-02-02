@@ -18,5 +18,7 @@ def repeat(phrase, num):
         >>> repeat('abc', 'nope') is None
         True
     """
+    # why the opposite conditional test in the solution?
+    
     if isinstance(num, int) and num >=0:
         return phrase*num

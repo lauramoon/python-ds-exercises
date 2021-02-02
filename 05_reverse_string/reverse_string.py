@@ -10,3 +10,6 @@ def reverse_string(phrase):
     lst = list(phrase)
     lst.reverse()
     return ''.join(lst)
+    
+    # shorter way:
+    # return phrase[::-1]
